@@ -1,0 +1,9 @@
+---
+layout: default
+title: Factorio
+---
+
+<h3 class="category-header"><b>Factorio</b></h3>
+{% for post in site.categories.factorio %}
+<span class="post-item">{{ post.date | date: '%Y-%m-%d' }} <a href="{{ post.url }}">{{ post.title }}</a></span>
+{% endfor %}
